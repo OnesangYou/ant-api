@@ -1,3 +1,10 @@
 package com.formicary.antapi.model
 
-data class SocialLoginRequestInfo(val authType: String, val authId: String)
+import io.swagger.annotations.ApiModelProperty
+
+data class SocialLoginRequestInfo(
+        @ApiModelProperty(example = "google")
+        val authType: String,
+        @ApiModelProperty(example = "20391")
+        val authId: String
+)

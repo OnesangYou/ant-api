@@ -1,4 +1,13 @@
 package com.formicary.antapi.model
 
-data class EmailJoinRequestInfo(val email: String, val password: String, val nickName: String)
+import io.swagger.annotations.ApiModelProperty
+
+data class EmailJoinRequestInfo(
+        @ApiModelProperty(example = "kbj7353@naver.com")
+        val email: String,
+        @ApiModelProperty(example = "123456")
+        val password: String,
+        @ApiModelProperty(example = "lukas")
+        val nickName: String
+)
 
